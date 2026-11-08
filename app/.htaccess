@@ -1,0 +1,2 @@
+# The app folder must never be served to the browser
+Require all denied
