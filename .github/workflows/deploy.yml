@@ -24,7 +24,7 @@ jobs:
           protocol: ftp
           port: 21
           local-dir: ./app/
-          server-dir: /app/
+          server-dir: /htdocs/app/
 
       - name: Deploy public website
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -36,3 +36,7 @@ jobs:
           port: 21
           local-dir: ./public/
           server-dir: /htdocs/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            app/**
