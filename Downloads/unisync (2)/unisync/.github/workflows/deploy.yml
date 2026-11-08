@@ -4,7 +4,6 @@ name: Deploy UniSync to InfinityFree
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 jobs:
